@@ -1,0 +1,17 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://api-evangelist.github.io/childrens-hospital-of-philadelphia/json-schema/chop-fhir-practitioner-schema.json",
+  "title": "CHOP FHIR Practitioner",
+  "description": "Subset schema for a US Core Practitioner resource served by the CHOP Provider Directory.",
+  "type": "object",
+  "required": ["resourceType"],
+  "properties": {
+    "resourceType": { "const": "Practitioner" },
+    "id": { "type": "string" },
+    "identifier": { "type": "array" },
+    "active": { "type": "boolean" },
+    "name": { "type": "array" },
+    "telecom": { "type": "array" },
+    "qualification": { "type": "array" }
+  }
+}

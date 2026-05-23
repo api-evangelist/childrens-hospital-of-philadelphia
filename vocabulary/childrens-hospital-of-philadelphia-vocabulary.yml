@@ -1,0 +1,37 @@
+name: Children's Hospital of Philadelphia Vocabulary
+description: Controlled vocabulary describing the CHOP FHIR API surface, pediatric care domains, and the open research ecosystem run by CHOP's Center for Data Driven Discovery in Biomedicine (D3b).
+modified: '2026-05-23'
+
+terms:
+  - term: CHOP
+    definition: Children's Hospital of Philadelphia. Founded 1855 as the first hospital in the United States dedicated to the healthcare of children. Affiliated with the University of Pennsylvania Perelman School of Medicine.
+  - term: FHIR
+    definition: Fast Healthcare Interoperability Resources. HL7 standard for healthcare data exchange. CHOP serves FHIR R4 from epicnsproxy.chop.edu.
+  - term: US Core
+    definition: HL7 US Core Implementation Guide. CHOP's CapabilityStatement instantiates us-core-server 6.1.0.
+  - term: SMART on FHIR
+    definition: SMART App Launch profile for OAuth2 authorization against FHIR servers. CHOP supports EHR launch, standalone launch, and PKCE.
+  - term: Patient Access API
+    definition: CMS-9115-F mandated FHIR API enabling patients to download their clinical and claims data.
+  - term: Provider Directory API
+    definition: CMS-9115-F mandated public FHIR API exposing Practitioner, PractitionerRole, Organization, Location, and Endpoint resources without authentication.
+  - term: Bulk Data Access
+    definition: HL7 Flat FHIR Group-level $export operation for large-scale population data extracts; CHOP's CapabilityStatement declares conformance to the bulk-data IG.
+  - term: MyCHOP
+    definition: CHOP's MyChart-based patient portal that gives patients and guardians access to test results, scheduling, and clinical messaging.
+  - term: Link2CHOP
+    definition: Internet-based portal for referring physicians providing read-only access to the CHOP Epic EMR.
+  - term: D3b
+    definition: Children's Hospital of Philadelphia Center for Data Driven Discovery in Biomedicine. Operates RADIANT and the Children's Brain Tumor Network.
+  - term: RADIANT
+    definition: Real-time Analysis and Discovery In Networked Technologies. Cloud-based data sharing and analytics platform funded by an ARPA-H award worth up to $10 million.
+  - term: CBTN
+    definition: Children's Brain Tumor Network. International collaborative biorepository and informatics platform led by D3b.
+  - term: Kids First DRC
+    definition: Gabriella Miller Kids First Data Resource Center. NIH Common Fund pediatric data resource coordinated by D3b.
+  - term: CAVATICA
+    definition: Cloud computing platform for pediatric cancer research jointly operated by D3b and Velsera (formerly Seven Bridges).
+  - term: PedcBioPortal
+    definition: Pediatric instance of the cBioPortal cancer genomics dashboard maintained by D3b.
+  - term: DBHi
+    definition: CHOP Department of Biomedical and Health Informatics. Maintains the chop-dbhi GitHub org with 168 public repos including prometheus-sql, sql-agent, dataexpress, dicom-anon, and smart-asthma.

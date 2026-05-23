@@ -1,0 +1,20 @@
+apiVersion: naftiko.dev/v1
+kind: WorkflowCapability
+metadata:
+  name: provider-directory
+  provider: childrens-hospital-of-philadelphia
+  description: Unauthenticated workflow that walks the CHOP Provider Directory (Organization, Location, Practitioner, PractitionerRole, Endpoint) for downstream payer or referral system ingestion.
+spec:
+  trigger:
+    type: anonymous
+  steps:
+    - id: list-organizations
+      capability: chop.organization.search
+    - id: list-locations
+      capability: chop.location.search
+    - id: list-practitioners
+      capability: chop.practitioner.search
+    - id: list-roles
+      capability: chop.practitionerRole.search
+    - id: list-endpoints
+      capability: chop.endpoint.search

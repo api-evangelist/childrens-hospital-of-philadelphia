@@ -1,0 +1,40 @@
+extends: spectral:oas
+rules:
+  chop-server-url:
+    description: All CHOP API specs must reference the production FHIR R4 base URL.
+    severity: error
+    given: $.servers[*].url
+    then:
+      function: pattern
+      functionOptions:
+        match: '^https://epicnsproxy\.chop\.edu/fhir/api/FHIR/R4$'
+
+  chop-operation-summary-title-case:
+    description: Operation summaries must use Title Case.
+    severity: warn
+    given: $.paths[*][get,post,put,patch,delete].summary
+    then:
+      function: pattern
+      functionOptions:
+        match: '^([A-Z][a-zA-Z0-9]*)(\s[A-Z][a-zA-Z0-9]*)*$'
+
+  chop-smart-on-fhir-security:
+    description: Every CHOP spec must declare the smartOnFhir OAuth2 security scheme.
+    severity: error
+    given: $.components.securitySchemes
+    then:
+      field: smartOnFhir
+      function: truthy
+
+  chop-tag-patient-access-or-provider-directory:
+    description: Operations must carry one of the canonical CHOP tags.
+    severity: warn
+    given: $.paths[*][get,post,put,patch,delete].tags[*]
+    then:
+      function: enumeration
+      functionOptions:
+        values:
+          - Patient Access
+          - Provider Directory
+          - Bulk Data
+          - SMART
