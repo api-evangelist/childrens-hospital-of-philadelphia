@@ -1,8 +1,18 @@
 name: Children's Hospital of Philadelphia
-description: |
-  Founded in 1855 as the first hospital in the United States dedicated to the healthcare of children, Children's Hospital of Philadelphia (CHOP) is a 692-bed flagship pediatric academic medical center affiliated with the University of Pennsylvania Perelman School of Medicine. CHOP records roughly 1.63 million outpatient visits and 34,829 admissions per year and operates one of the largest pediatric research enterprises in the world through its Research Institute and the Center for Data Driven Discovery in Biomedicine (D3b).
+description: >
+  Founded in 1855 as the first hospital in the United States dedicated to the healthcare of children, Children's
+  Hospital of Philadelphia (CHOP) is a 692-bed flagship pediatric academic medical center affiliated with the University
+  of Pennsylvania Perelman School of Medicine. CHOP records roughly 1.63 million outpatient visits and 34,829 admissions
+  per year and operates one of the largest pediatric research enterprises in the world through its Research Institute
+  and the Center for Data Driven Discovery in Biomedicine (D3b).
 
-  From an API perspective, CHOP runs a production Epic-backed HL7 FHIR R4 endpoint at `https://epicnsproxy.chop.edu/fhir/api/FHIR/R4` exposing CMS-9115-F Patient Access and Provider Directory resources, US Core 6.1.0, SMART on FHIR, and HL7 Bulk Data. CHOP additionally publishes 320+ public repositories across the `chop-dbhi` (Department of Biomedical and Health Informatics) and `d3b-center` GitHub organizations, plus shared research data platforms including RADIANT, CAVATICA, PedcBioPortal, the Children's Brain Tumor Network, and the Kids First Data Resource Center.
+
+  From an API perspective, CHOP runs a production Epic-backed HL7 FHIR R4 endpoint at
+  `https://epicnsproxy.chop.edu/fhir/api/FHIR/R4` exposing CMS-9115-F Patient Access and Provider Directory resources,
+  US Core 6.1.0, SMART on FHIR, and HL7 Bulk Data. CHOP additionally publishes 320+ public repositories across the
+  `chop-dbhi` (Department of Biomedical and Health Informatics) and `d3b-center` GitHub organizations, plus shared
+  research data platforms including RADIANT, CAVATICA, PedcBioPortal, the Children's Brain Tumor Network, and the Kids
+  First Data Resource Center.
 url: https://github.com/api-evangelist/childrens-hospital-of-philadelphia
 image: https://www.chop.edu/themes/custom/chop/logo.svg
 created: '2026-05-23'
@@ -20,7 +30,6 @@ tags:
   - Bulk Data
   - Research Data
   - Open Data
-
 apis:
   - name: CHOP FHIR R4 API
     description: |
@@ -68,7 +77,6 @@ apis:
         url: https://epicnsproxy.chop.edu/fhir/oauth2/authorize
       - type: Sandbox
         url: https://fhir.epic.com/Documentation?docId=testpatients
-
   - name: MyCHOP Patient Portal
     description: |
       MyChart-based patient portal that gives patients, parents and guardians access to virtual medical
@@ -86,7 +94,6 @@ apis:
         url: https://mychop.chop.edu/MyChart/Authentication/Login
       - type: Documentation
         url: https://www.chop.edu/mychop-patient-portal
-
   - name: Link2CHOP Referring Physician Portal
     description: |
       Internet-based portal for referring physician offices that provides real-time, read-only access to
@@ -107,7 +114,6 @@ apis:
         url: https://www.chop.edu/healthcare-professionals/link2chop
       - type: Support
         url: tel:+1-215-590-4357
-
   - name: D3b Data Sharing Platforms
     description: |
       The Center for Data Driven Discovery in Biomedicine (D3b) at CHOP operates the open research data
@@ -137,7 +143,6 @@ apis:
         url: https://github.com/d3b-center/peds-brain-auto-seg-public
       - type: GitHubRepository
         url: https://github.com/d3b-center/D3b-RADIANT-Annotation
-
   - name: DBHi Biomedical and Health Informatics
     description: |
       CHOP's Department of Biomedical and Health Informatics (DBHi) maintains 168 public repositories
@@ -165,7 +170,6 @@ apis:
         url: https://github.com/chop-dbhi/smart-asthma
       - type: GitHubRepository
         url: https://github.com/chop-dbhi/avocado
-
 common:
   - type: Portal
     url: https://www.chop.edu
@@ -188,14 +192,6 @@ common:
     url: https://www.chop.edu/contact-us
   - type: SpectralRules
     url: rules/chop-fhir-rules.yml
-  - type: NaftikoCapability
-    url: capabilities/shared/chop-fhir-r4.yaml
-  - type: NaftikoCapability
-    url: capabilities/pediatric-patient-access.yaml
-  - type: NaftikoCapability
-    url: capabilities/provider-directory.yaml
-  - type: NaftikoCapability
-    url: capabilities/bulk-cohort-export.yaml
   - type: JSONLD
     url: json-ld/childrens-hospital-of-philadelphia-context.jsonld
   - type: Vocabulary
@@ -203,27 +199,44 @@ common:
   - type: Features
     data:
       - name: CMS-Compliant Patient Access FHIR API
-        description: HL7 FHIR R4 server with US Core 6.1.0 conformance and SMART on FHIR authorization, fulfilling CMS-9115-F Patient Access requirements.
+        description: >-
+          HL7 FHIR R4 server with US Core 6.1.0 conformance and SMART on FHIR authorization, fulfilling CMS-9115-F
+          Patient Access requirements.
       - name: Public Provider Directory
         description: Unauthenticated FHIR resources for Practitioner, PractitionerRole, Organization, Location, and Endpoint.
       - name: HL7 Bulk Data Access
         description: Group-level $export per the HL7 Bulk Data IG; supports backend services (client_credentials) authentication.
       - name: 59 FHIR Resource Types
-        description: Capability statement advertises 59 resource types covering clinical, administrative, and financial data, including AllergyIntolerance, Condition, Observation, MedicationRequest, Immunization, Procedure, Encounter, DiagnosticReport, DocumentReference, Coverage, ExplanationOfBenefit, and Claim.
+        description: >-
+          Capability statement advertises 59 resource types covering clinical, administrative, and financial data,
+          including AllergyIntolerance, Condition, Observation, MedicationRequest, Immunization, Procedure, Encounter,
+          DiagnosticReport, DocumentReference, Coverage, ExplanationOfBenefit, and Claim.
       - name: Open-Source Health Informatics Tools
-        description: 168 public DBHi repositories and 153 public D3b repositories spanning ETL, anonymization, biorepository analytics, and SMART apps.
+        description: >-
+          168 public DBHi repositories and 153 public D3b repositories spanning ETL, anonymization, biorepository
+          analytics, and SMART apps.
   - type: UseCases
     data:
       - name: Patient-Mediated Data Download
-        description: Parents and guardians download their child's full clinical and claims history into third-party PHR apps via SMART on FHIR.
+        description: >-
+          Parents and guardians download their child's full clinical and claims history into third-party PHR apps via
+          SMART on FHIR.
       - name: Care-Coordination Apps
-        description: Approved EHR-launched and standalone SMART apps surface CHOP data inside referring-provider and care-coordination tools.
+        description: >-
+          Approved EHR-launched and standalone SMART apps surface CHOP data inside referring-provider and
+          care-coordination tools.
       - name: Population Analytics
-        description: Approved system-level clients run Group-level $export to extract de-identified cohorts for research and quality measurement.
+        description: >-
+          Approved system-level clients run Group-level $export to extract de-identified cohorts for research and
+          quality measurement.
       - name: Pediatric Cancer Research Collaboration
-        description: D3b platforms (RADIANT, CAVATICA, PedcBioPortal, CBTN) enable multi-site sharing of pediatric oncology and rare-disease data.
+        description: >-
+          D3b platforms (RADIANT, CAVATICA, PedcBioPortal, CBTN) enable multi-site sharing of pediatric oncology and
+          rare-disease data.
       - name: Referring Provider Read-Only EMR Access
-        description: Link2CHOP gives credentialed referring physicians live access to discharge notes, labs, imaging, medications, and diagnoses for shared patients.
+        description: >-
+          Link2CHOP gives credentialed referring physicians live access to discharge notes, labs, imaging, medications,
+          and diagnoses for shared patients.
   - type: Integrations
     data:
       - name: Epic EHR
@@ -252,7 +265,6 @@ common:
         description: Population-scale data extraction for approved partners.
       - name: Open Research Data
         description: D3b platforms for pediatric cancer and rare-disease research collaboration.
-
 maintainers:
   - FN: Kin Lane
     email: info@apievangelist.com
