@@ -63,15 +63,15 @@ apis:
         url: json-schema/chop-fhir-practitioner-schema.json
       - type: JSONSchema
         url: json-schema/chop-fhir-observation-schema.json
-      - type: Example
+      - type: Examples
         url: examples/chop-fhir-patient-example.json
-      - type: Example
+      - type: Examples
         url: examples/chop-fhir-organization-example.json
-      - type: Example
+      - type: Examples
         url: examples/chop-fhir-practitioner-example.json
-      - type: Example
+      - type: Examples
         url: examples/chop-fhir-observation-example.json
-      - type: Example
+      - type: Examples
         url: examples/chop-fhir-bulk-export-example.json
       - type: Authentication
         url: https://epicnsproxy.chop.edu/fhir/oauth2/authorize

@@ -2,11 +2,11 @@
   "repo": "childrens-hospital-of-philadelphia",
   "feeds": [
     {
-      "source": "https://www.chop.edu/newsroom/search",
-      "feed_url": "https://www.chop.edu/newsroom/search",
+      "source": "https://www.chop.edu/rss.xml",
+      "feed_url": "https://www.chop.edu/rss.xml",
       "title": "",
       "saved": 0,
-      "method": "none"
+      "method": "feed"
     },
     {
       "source": "https://github.com/d3b-center",
@@ -17,5 +17,5 @@
     }
   ],
   "post_count": 2,
-  "fetched": "2026-06-14T20:42:17Z"
+  "fetched": "2026-06-27T12:03:07Z"
 }
