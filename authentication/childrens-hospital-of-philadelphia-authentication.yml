@@ -1,0 +1,22 @@
+generated: '2026-07-11'
+method: derived
+source: openapi/chop-fhir-r4-openapi.yml
+summary:
+  types:
+  - oauth2
+  oauth2_flows:
+  - authorizationCode
+  - clientCredentials
+schemes:
+- name: smartOnFhir
+  type: oauth2
+  flows:
+  - flow: authorizationCode
+    authorizationUrl: https://epicnsproxy.chop.edu/fhir/oauth2/authorize
+    tokenUrl: https://epicnsproxy.chop.edu/fhir/oauth2/token
+    scopes: 5
+  - flow: clientCredentials
+    tokenUrl: https://epicnsproxy.chop.edu/fhir/oauth2/token
+    scopes: 1
+  sources:
+  - openapi/chop-fhir-r4-openapi.yml

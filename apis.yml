@@ -171,6 +171,10 @@ apis:
       - type: GitHubRepository
         url: https://github.com/chop-dbhi/avocado
 common:
+  - type: DomainSecurity
+    url: security/childrens-hospital-of-philadelphia-domain-security.yml
+  - type: Authentication
+    url: authentication/childrens-hospital-of-philadelphia-authentication.yml
   - type: OAuthScopes
     url: scopes/childrens-hospital-of-philadelphia-scopes.yml
   - type: Portal
