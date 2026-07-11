@@ -171,6 +171,8 @@ apis:
       - type: GitHubRepository
         url: https://github.com/chop-dbhi/avocado
 common:
+  - type: OAuthScopes
+    url: scopes/childrens-hospital-of-philadelphia-scopes.yml
   - type: Portal
     url: https://www.chop.edu
   - type: DeveloperPortal
