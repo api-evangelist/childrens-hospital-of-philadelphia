@@ -1,0 +1,20 @@
+{
+  "provider": "childrens-hospital-of-philadelphia",
+  "sources": [
+    "childrens-hospital-of-philadelphia-bulk-data-api-openapi.yml",
+    "childrens-hospital-of-philadelphia-patient-access-api-openapi.yml",
+    "childrens-hospital-of-philadelphia-provider-directory-api-openapi.yml",
+    "childrens-hospital-of-philadelphia-smart-api-openapi.yml"
+  ],
+  "outputs": [
+    "childrens-hospital-of-philadelphia-bulk-data-api-openapi.yml",
+    "childrens-hospital-of-philadelphia-patient-access-api-openapi.yml",
+    "childrens-hospital-of-philadelphia-provider-directory-api-openapi.yml",
+    "childrens-hospital-of-philadelphia-smart-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}
