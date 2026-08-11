@@ -85,8 +85,6 @@ apis:
     url: https://link2chop.chop.edu
   - type: Documentation
     url: https://www.chop.edu/healthcare-professionals/link2chop
-  - type: Support
-    url: tel:+1-215-590-4357
 - name: D3b Data Sharing Platforms
   description: >
     The Center for Data Driven Discovery in Biomedicine (D3b) at CHOP operates the open research data
