@@ -29,7 +29,7 @@ accessModel:
 image: https://www.chop.edu/themes/custom/chop/logo.svg
 created: '2026-05-23'
 modified: '2026-05-23'
-specificationVersion: '0.18'
+specificationVersion: '0.23'
 tags:
   - Healthcare
   - Pediatrics
