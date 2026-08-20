@@ -34,6 +34,18 @@ tags:
   - Healthcare
   - Pediatrics
   - FHIR
+  - SMART on FHIR
+  - Patient Access
+  - Provider Directory
+  - CMS Interoperability
+  - US Core
+  - Bulk Data
+  - Research Data
+  - Open Data
+tags_raw:
+  - Healthcare
+  - Pediatrics
+  - FHIR
   - SMART On FHIR
   - Patient Access
   - Provider Directory
@@ -132,6 +144,10 @@ apis:
     (biomedical data models), smart-asthma, ecease-smart-app, and dr-trace.
   humanURL: http://dbhi.chop.edu
   tags:
+  - Health Informatics
+  - Open-Source
+  - SMART on FHIR
+  tags_raw:
   - Health Informatics
   - Open Source
   - SMART On FHIR
