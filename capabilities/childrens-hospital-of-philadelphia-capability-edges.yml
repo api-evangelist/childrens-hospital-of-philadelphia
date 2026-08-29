@@ -1,0 +1,35 @@
+slug: childrens-hospital-of-philadelphia
+provider: Children's Hospital of Philadelphia
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Healthcare Providers
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 2
+edges:
+- tag: Patient Access
+  spec_file: childrens-hospital-of-philadelphia-patient-access-api-openapi.yml
+  capability_id: BC-2900.60
+  capability_id_l1: BC-2900
+  capability_name: Healthcare Interoperability Operations
+  confidence: 0.82
+  evidence: '"exposing CMS-mandated Patient Access and Provider Directory data, plus broader SMART on
+    FHIR clinical resources"; GET /Patient  searchPatient, GET /Coverage  searchCoverage'
+  reason: CMS Patient Access API surface letting patient-authorised apps retrieve clinical and coverage
+    records — patient-initiated data sharing over FHIR endpoints.
+- tag: Bulk Data
+  spec_file: childrens-hospital-of-philadelphia-bulk-data-api-openapi.yml
+  capability_id: BC-2900.60
+  capability_id_l1: BC-2900
+  capability_name: Healthcare Interoperability Operations
+  confidence: 0.8
+  evidence: GET /Group/{id}/$export  exportGroup  Export Group Bulk Data; "conforms to US Core 6.1.0 and
+    the HL7 FHIR Bulk Data Access (Flat FHIR) capability statement"
+  reason: Bulk FHIR export of population cohorts is squarely the operation of FHIR endpoints and health
+    information exchange for the provider.
