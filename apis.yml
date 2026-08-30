@@ -47,7 +47,7 @@ tags:
   - Healthcare
   - Pediatrics
   - FHIR
-  - SMART on FHIR
+  - SMART On FHIR
   - Patient Access
   - Provider Directory
   - CMS Interoperability
@@ -159,7 +159,7 @@ apis:
   tags:
   - Health Informatics
   - Open-Source
-  - SMART on FHIR
+  - SMART On FHIR
   tags_raw:
   - Health Informatics
   - Open Source
