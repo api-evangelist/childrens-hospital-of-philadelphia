@@ -326,6 +326,8 @@ apis:
   - type: Sandbox
     url: https://fhir.epic.com/Documentation?docId=testpatients
 common:
+  - type: Website
+    url: https://www.chop.edu/
   - type: CapabilityMap
     url: capabilities/childrens-hospital-of-philadelphia-capability-edges.yml
     name: Children's Hospital of Philadelphia Business Capability Map
