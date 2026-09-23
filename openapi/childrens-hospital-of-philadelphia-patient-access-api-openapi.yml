@@ -1,27 +1,11 @@
-openapi: 3.1.0
+openapi: 3.2.0
 info:
-  title: Children's Hospital of Philadelphia FHIR R4 Bulk Data Patient Access API
+  title: Children's Hospital of Philadelphia FHIR R4 Patient Access…
   description: 'The Children''s Hospital of Philadelphia (CHOP) FHIR Server is an Epic-backed HL7 FHIR R4 implementation
 
     exposing CMS-mandated Patient Access and Provider Directory data, plus broader SMART on FHIR clinical
 
-    resources. It conforms to US Core 6.1.0 and the HL7 FHIR Bulk Data Access (Flat FHIR) capability
-
-    statement.
-
-
-    Software: Epic (November 2025 release).
-
-
-    Authorization is OAuth 2.0 / SMART-on-FHIR (authorization code, refresh token, client credentials,
-
-    JWT bearer). PKCE (S256) is supported. App registration is performed through Epic on FHIR
-
-    (https://fhir.epic.com) by selecting Children''s Hospital of Philadelphia (Organization ID 332) as the
-
-    target endpoint.
-
-    '
+    resources.'
   version: 4.0.1
   contact:
     name: CHOP FHIR API
@@ -227,9 +211,15 @@ paths:
             application/fhir+json: {}
 components:
   parameters:
-    _id:
-      name: _id
+    code:
+      name: code
       in: query
+      schema:
+        type: string
+    id:
+      name: id
+      in: path
+      required: true
       schema:
         type: string
     patient:
@@ -238,13 +228,13 @@ components:
       required: true
       schema:
         type: string
-    category:
-      name: category
+    _id:
+      name: _id
       in: query
       schema:
         type: string
-    code:
-      name: code
+    category:
+      name: category
       in: query
       schema:
         type: string
@@ -253,12 +243,6 @@ components:
       in: query
       schema:
         type: integer
-    id:
-      name: id
-      in: path
-      required: true
-      schema:
-        type: string
   securitySchemes:
     smartOnFhir:
       type: oauth2
