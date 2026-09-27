@@ -211,11 +211,16 @@ paths:
             application/fhir+json: {}
 components:
   parameters:
-    code:
-      name: code
+    _id:
+      name: _id
       in: query
       schema:
         type: string
+    _count:
+      name: _count
+      in: query
+      schema:
+        type: integer
     id:
       name: id
       in: path
@@ -228,8 +233,8 @@ components:
       required: true
       schema:
         type: string
-    _id:
-      name: _id
+    code:
+      name: code
       in: query
       schema:
         type: string
@@ -238,11 +243,6 @@ components:
       in: query
       schema:
         type: string
-    _count:
-      name: _count
-      in: query
-      schema:
-        type: integer
   securitySchemes:
     smartOnFhir:
       type: oauth2
