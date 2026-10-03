@@ -98,13 +98,13 @@ components:
       in: query
       schema:
         type: string
-    _id:
-      name: _id
+    specialty:
+      name: specialty
       in: query
       schema:
         type: string
-    specialty:
-      name: specialty
+    _id:
+      name: _id
       in: query
       schema:
         type: string

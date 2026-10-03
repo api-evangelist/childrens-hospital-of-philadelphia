@@ -211,8 +211,8 @@ paths:
             application/fhir+json: {}
 components:
   parameters:
-    _id:
-      name: _id
+    code:
+      name: code
       in: query
       schema:
         type: string
@@ -221,26 +221,26 @@ components:
       in: query
       schema:
         type: integer
-    id:
-      name: id
-      in: path
-      required: true
-      schema:
-        type: string
     patient:
       name: patient
       in: query
       required: true
       schema:
         type: string
-    code:
-      name: code
-      in: query
-      schema:
-        type: string
     category:
       name: category
       in: query
+      schema:
+        type: string
+    _id:
+      name: _id
+      in: query
+      schema:
+        type: string
+    id:
+      name: id
+      in: path
+      required: true
       schema:
         type: string
   securitySchemes:
