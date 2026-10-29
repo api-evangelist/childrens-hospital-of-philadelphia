@@ -1,4 +1,4 @@
-# Children's Hospital of Philadelphia (childrens-hospital-of-philadelphia)
+# Children's Hospital of Philadelphia
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,199 +64,157 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Founded in 1855 as the first hospital in the United States dedicated to the healthcare of children, Children's Hospital of Philadelphia (CHOP) is a 692-bed flagship pediatric academic medical center affiliated with the University of Pennsylvania Perelman School of Medicine. CHOP records roughly 1.63 million outpatient visits and 34,829 admissions per year and operates one of the largest pediatric research enterprises in the world through its Research Institute and the Center for Data Driven Discovery in Biomedicine (D3b).
+Founded in 1855 as the first hospital in the United States dedicated to the healthcare of children, Children's Hospital of Philadelphia (CHOP) is a 692-bed flagship pediatric academic medical center affiliated with the University of Pennsylvania Perelman School of Medicine. CHOP records roughly 1.63 million outpatient visits and 34,829 admissions per year and operates one of the largest pediatric research enterprises in the world through its Research Institute and the Center for Data Driven Discovery in Biomedicine (D3b). From an API perspective, CHOP runs a production Epic-backed HL7 FHIR R4 endpoint at `https://epicnsproxy.chop.edu/fhir/api/FHIR/R4` exposing CMS-9115-F Patient Access and Provider Directory resources, US Core 6.1.0, SMART on FHIR, and HL7 Bulk Data. CHOP additionally publishes 320+ public repositories across the `chop-dbhi` (Department of Biomedical and Health Informatics) and `d3b-center` GitHub organizations, plus shared research data platforms including RADIANT, CAVATICA, PedcBioPortal, the Children's Brain Tumor Network, and the Kids First Data Resource Center.
 
-From an API perspective, CHOP runs a production Epic-backed HL7 FHIR R4 endpoint at `https://epicnsproxy.chop.edu/fhir/api/FHIR/R4` exposing CMS-9115-F Patient Access and Provider Directory resources, US Core 6.1.0, SMART on FHIR, and HL7 Bulk Data. CHOP additionally publishes 320+ public repositories across the `chop-dbhi` (Department of Biomedical and Health Informatics) and `d3b-center` GitHub organizations, plus shared research data platforms including RADIANT, CAVATICA, PedcBioPortal, the Children's Brain Tumor Network, and the Kids First Data Resource Center.
+**Areas:** Healthcare · Pediatrics · FHIR · SMART on FHIR · Patient Access · Provider Directory · CMS Interoperability · US Core · Bulk Data · Research Data · Open Data
 
-**APIs.json:** [https://github.com/api-evangelist/childrens-hospital-of-philadelphia](https://github.com/api-evangelist/childrens-hospital-of-philadelphia)
+## Children's Hospital of Philadelphia on APIs.io
 
-## Tags
+Everything profiled for Children's Hospital of Philadelphia is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/childrens-hospital-of-philadelphia/](https://apis.io/providers/childrens-hospital-of-philadelphia/)** — or go straight to one of the APIs or properties below.
 
-- Healthcare
-- Pediatrics
-- FHIR
-- SMART On FHIR
-- Patient Access
-- Provider Directory
-- CMS Interoperability
-- US Core
-- Bulk Data
-- Research Data
-- Open Data
+### APIs (8)
 
-## Timestamps
+- [MyCHOP Patient Portal](https://apis.io/apis/childrens-hospital-of-philadelphia/mychop-patient-portal/) — MyChart-based patient portal that gives patients, parents and guardians access to virtual medical records, lab results, secure messaging, telehealth visits,…
+- [Link2CHOP Referring Physician Portal](https://apis.io/apis/childrens-hospital-of-philadelphia/link2chop-referring-physician-portal/) — Internet-based portal for referring physician offices that provides real-time, read-only access to the CHOP Epic EMR. Surfaces discharge notes, operative…
+- [D3b Data Sharing Platforms](https://apis.io/apis/childrens-hospital-of-philadelphia/d3b-data-sharing-platforms/) — The Center for Data Driven Discovery in Biomedicine (D3b) at CHOP operates the open research data infrastructure for pediatric cancer and rare disease.…
+- [DBHi Biomedical and Health Informatics](https://apis.io/apis/childrens-hospital-of-philadelphia/dbhi-biomedical-and-health-informatics/) — CHOP's Department of Biomedical and Health Informatics (DBHi) maintains 168 public repositories covering health data infrastructure, EHR integration, and…
+- [Children's Hospital of Philadelphia Bulk Data API](https://apis.io/apis/childrens-hospital-of-philadelphia/childrens-hospital-of-philadelphia-bulk-data-api/) — HL7 FHIR Bulk Data Access (Flat FHIR) Group-level export.
+- [Children's Hospital of Philadelphia Patient Access API](https://apis.io/apis/childrens-hospital-of-philadelphia/childrens-hospital-of-philadelphia-patient-access-api/) — Patient-mediated clinical and claims data resources required under CMS-9115-F.
+- [Children's Hospital of Philadelphia Provider Directory API](https://apis.io/apis/childrens-hospital-of-philadelphia/childrens-hospital-of-philadelphia-provider-directory-api/) — Public provider, organization, location, and endpoint resources required under CMS-9115-F.
+- [Children's Hospital of Philadelphia SMART API](https://apis.io/apis/childrens-hospital-of-philadelphia/childrens-hospital-of-philadelphia-smart-api/) — SMART on FHIR launch and discovery endpoints.
 
-- **Created:** 2026-05-23
-- **Modified:** 2026-05-23
+### Published properties
 
-## APIs
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-### CHOP FHIR R4 API
+#### Agentic access (1)
 
-The Children's Hospital of Philadelphia FHIR Server. Epic (November 2025) on the back end,
-conforming to US Core 6.1.0 and the HL7 Bulk Data Access IG. Serves Patient Access (clinical + claims)
-and Provider Directory data per CMS-9115-F, exposing 59 FHIR resource types including Patient,
-AllergyIntolerance, Condition, Observation, MedicationRequest, Immunization, Procedure, Encounter,
-DiagnosticReport, DocumentReference, Coverage, ExplanationOfBenefit, Claim, Practitioner,
-PractitionerRole, Organization, Location, and Endpoint.
+Which operations an agent can call, which act, and which need a human in the loop.
 
-- **Human URL:** [https://www.chop.edu/health-resources/cms-interoperability-and-patient-access](https://www.chop.edu/health-resources/cms-interoperability-and-patient-access)
-- **Base URL:** `https://epicnsproxy.chop.edu/fhir/api/FHIR/R4`
+- [Childrens Hospital Of Philadelphia Agentic Access](https://apis.io/agentic-access/childrens-hospital-of-philadelphia/childrens-hospital-of-philadelphia-agentic-access/)
 
-#### Tags
+#### JSON Schema (4)
 
-- FHIR
-- SMART On FHIR
-- Patient Access
-- Provider Directory
-- Bulk Data
-- US Core
+The data models the API reads and writes.
 
-#### Properties
+- [CHOP FHIR Observation](https://apis.io/schemas/childrens-hospital-of-philadelphia/chop-fhir-observation/)
+- [CHOP FHIR Organization](https://apis.io/schemas/childrens-hospital-of-philadelphia/chop-fhir-organization/)
+- [CHOP FHIR Patient](https://apis.io/schemas/childrens-hospital-of-philadelphia/chop-fhir-patient/)
+- [CHOP FHIR Practitioner](https://apis.io/schemas/childrens-hospital-of-philadelphia/chop-fhir-practitioner/)
 
-- [Documentation](https://www.chop.edu/health-resources/cms-interoperability-and-patient-access)
-- [API Reference](https://epicnsproxy.chop.edu/fhir/api/FHIR/R4/metadata)
-- [OpenAPI](openapi/chop-fhir-r4-openapi.yml) — [OpenAPI Specification](https://spec.openapis.org/oas/latest.html)
-- [Postman Collection](collections/chop-fhir-r4.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/chop-fhir-r4.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-- [JSON Schema](json-schema/chop-fhir-patient-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/chop-fhir-organization-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/chop-fhir-practitioner-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [JSON Schema](json-schema/chop-fhir-observation-schema.json) — [JSON Schema](https://json-schema.org/specification)
-- [Example](examples/chop-fhir-patient-example.json)
-- [Example](examples/chop-fhir-organization-example.json)
-- [Example](examples/chop-fhir-practitioner-example.json)
-- [Example](examples/chop-fhir-observation-example.json)
-- [Example](examples/chop-fhir-bulk-export-example.json)
-- [Authentication](https://epicnsproxy.chop.edu/fhir/oauth2/authorize)
-- [Sandbox](https://fhir.epic.com/Documentation?docId=testpatients)
+#### JSON-LD (1)
 
-### MyCHOP Patient Portal
+Linked-data contexts for the provider's vocabulary.
 
-MyChart-based patient portal that gives patients, parents and guardians access to virtual medical
-records, lab results, secure messaging, telehealth visits, medication refills, and appointment
-scheduling. Supports multifactor authentication and multiple languages (Spanish, Arabic, Portuguese,
-Chinese, and others). Apps approved via Epic on FHIR connect to the underlying CHOP FHIR R4 API.
+- [Childrens Hospital Of Philadelphia Context](https://apis.io/jsonld/childrens-hospital-of-philadelphia/childrens-hospital-of-philadelphia-context/)
 
-- **Human URL:** [https://www.chop.edu/mychop-patient-portal](https://www.chop.edu/mychop-patient-portal)
-- **Base URL:** `https://mychop.chop.edu/MyChart`
+#### Vocabulary (1)
 
-#### Tags
+The provider's domain terms, defined.
 
-- Patient Portal
-- MyChart
-- Patient Access
+- [Children's Hospital of Philadelphia Vocabulary](https://apis.io/vocabularies/childrens-hospital-of-philadelphia/childrens-hospital-of-philadelphia-vocabulary/)
 
-#### Properties
+#### Examples (5)
 
-- [Portal](https://mychop.chop.edu/MyChart/Authentication/Login)
-- [Documentation](https://www.chop.edu/mychop-patient-portal)
-- [Postman Collection](collections/chop-fhir-r4.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/chop-fhir-r4.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+Example requests and responses.
 
-### Link2CHOP Referring Physician Portal
+- [Chop Fhir Bulk Export Example](https://apis.io/examples/childrens-hospital-of-philadelphia/chop-fhir-bulk-export-example/)
+- [Chop Fhir Observation Example](https://apis.io/examples/childrens-hospital-of-philadelphia/chop-fhir-observation-example/)
+- [Chop Fhir Organization Example](https://apis.io/examples/childrens-hospital-of-philadelphia/chop-fhir-organization-example/)
+- [Chop Fhir Patient Example](https://apis.io/examples/childrens-hospital-of-philadelphia/chop-fhir-patient-example/)
+- [Chop Fhir Practitioner Example](https://apis.io/examples/childrens-hospital-of-philadelphia/chop-fhir-practitioner-example/)
 
-Internet-based portal for referring physician offices that provides real-time, read-only access to
-the CHOP Epic EMR. Surfaces discharge notes, operative reports, progress notes, consult reports,
-labs, imaging, medications, and diagnoses, plus the ability to place specialist consult orders for
-current CHOP patients and to receive automated notifications for admissions, discharges, ED visits,
-and scheduled appointments.
+#### Collections (5)
 
-- **Human URL:** [https://www.chop.edu/healthcare-professionals/link2chop](https://www.chop.edu/healthcare-professionals/link2chop)
-- **Base URL:** `https://link2chop.chop.edu`
+Postman and Open Collection request collections.
 
-#### Tags
+- [Children's Hospital of Philadelphia FHIR R4 Bulk Data API](https://apis.io/collections/childrens-hospital-of-philadelphia/open-childrens-hospital-of-philadelphia-bulk-data-api/)
+- [Children's Hospital of Philadelphia FHIR R4 Bulk Data Patient Access API](https://apis.io/collections/childrens-hospital-of-philadelphia/open-childrens-hospital-of-philadelphia-patient-access-api/)
+- [Children's Hospital of Philadelphia FHIR R4 Bulk Data Provider Directory API](https://apis.io/collections/childrens-hospital-of-philadelphia/open-childrens-hospital-of-philadelphia-provider-directory-api/)
+- [Children's Hospital of Philadelphia FHIR R4 Bulk Data SMART API](https://apis.io/collections/childrens-hospital-of-philadelphia/open-childrens-hospital-of-philadelphia-smart-api/)
+- [Children's Hospital of Philadelphia FHIR R4 API](https://apis.io/collections/childrens-hospital-of-philadelphia/open-chop-fhir-r4/)
 
-- Referring Provider
-- EMR Access
-- Epic
+#### Governance rules (2)
 
-#### Properties
+Spectral rulesets for the provider's contracts.
 
-- [Portal](https://link2chop.chop.edu)
-- [Documentation](https://www.chop.edu/healthcare-professionals/link2chop)
-- [Support](tel:+1-215-590-4357)
-- [Postman Collection](collections/chop-fhir-r4.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/chop-fhir-r4.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+- [Children's Hospital of Philadelphia — jsonschema rules](https://apis.io/rules/childrens-hospital-of-philadelphia/childrens-hospital-of-philadelphia-jsonschema-spectral-rules/)
+- [Children's Hospital of Philadelphia — chop fhir rules](https://apis.io/rules/childrens-hospital-of-philadelphia/chop-fhir-rules/)
 
-### D3b Data Sharing Platforms
+#### Security (2)
 
-The Center for Data Driven Discovery in Biomedicine (D3b) at CHOP operates the open research data
-infrastructure for pediatric cancer and rare disease. Programs include RADIANT (Real-time Analysis
-and Discovery in Integrated And Networked Technologies, an ARPA-H-funded cloud-based data sharing
-and analytics platform up to $10 million), CAVATICA cloud computing platform, PedcBioPortal pediatric
-cancer genomics portal, the Children's Brain Tumor Network (CBTN), and the Gabriella Miller Kids
-First Data Resource Center. 153 public repositories on GitHub.
+Authentication, trust centre, and vulnerability disclosure.
 
-- **Human URL:** [https://d3b.center](https://d3b.center)
+- [Childrens Hospital Of Philadelphia Authentication](https://apis.io/security/childrens-hospital-of-philadelphia/childrens-hospital-of-philadelphia-authentication/)
+- [Childrens Hospital Of Philadelphia Domain Security](https://apis.io/security/childrens-hospital-of-philadelphia/childrens-hospital-of-philadelphia-domain-security/)
 
-#### Tags
+#### OAuth scopes (1)
 
-- Research Data
-- Open Science
-- Pediatric Cancer
-- Bioinformatics
+The permissions the API asks for.
 
-#### Properties
+- [Childrens Hospital Of Philadelphia Scopes](https://apis.io/scopes/childrens-hospital-of-philadelphia/childrens-hospital-of-philadelphia-scopes/)
 
-- [Documentation](https://d3b.center)
-- [GitHub Organization](https://github.com/d3b-center)
-- [GitHub Repository](https://github.com/d3b-center/OpenPedCan-analysis)
-- [GitHub Repository](https://github.com/d3b-center/annoFuse)
-- [GitHub Repository](https://github.com/d3b-center/bixtools)
-- [GitHub Repository](https://github.com/d3b-center/peds-brain-auto-seg-public)
-- [GitHub Repository](https://github.com/d3b-center/D3b-RADIANT-Annotation)
-- [Postman Collection](collections/chop-fhir-r4.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/chop-fhir-r4.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
+## Where to find this API
 
-### DBHi Biomedical and Health Informatics
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
 
-CHOP's Department of Biomedical and Health Informatics (DBHi) maintains 168 public repositories
-covering health data infrastructure, EHR integration, and SMART on FHIR tools. Notable open-source
-projects include prometheus-sql, sql-agent, dataexpress (cross-database ETL), dicom-anon (DICOM
-anonymizer), avocado (metadata APIs for Django), origins (bi-temporal database), data-models
-(biomedical data models), smart-asthma, ecease-smart-app, and dr-trace.
-
-- **Human URL:** [http://dbhi.chop.edu](http://dbhi.chop.edu)
-
-#### Tags
-
-- Health Informatics
-- Open Source
-- SMART On FHIR
-
-#### Properties
-
-- [GitHub Organization](https://github.com/chop-dbhi)
-- [GitHub Repository](https://github.com/chop-dbhi/prometheus-sql)
-- [GitHub Repository](https://github.com/chop-dbhi/sql-agent)
-- [GitHub Repository](https://github.com/chop-dbhi/dataexpress)
-- [GitHub Repository](https://github.com/chop-dbhi/dicom-anon)
-- [GitHub Repository](https://github.com/chop-dbhi/smart-asthma)
-- [GitHub Repository](https://github.com/chop-dbhi/avocado)
-- [Postman Collection](collections/chop-fhir-r4.postman_collection.json) — [Postman Collection 2.1](https://schema.getpostman.com/json/collection/v2.1.0/collection.json)
-- [Open Collection](collections/chop-fhir-r4.opencollection.json) — [Open Collection 1.0](https://schema.opencollection.com/opencollection/v1.0.0.json)
-
-## Common Properties
-
-- [Portal](https://www.chop.edu)
-- [Developer Portal](https://fhir.epic.com)
-- [GitHub Organization](https://github.com/chop-dbhi)
-- [GitHub Organization](https://github.com/d3b-center)
-- [Blog](https://www.chop.edu/news)
-- [Privacy Policy](https://www.chop.edu/pages/privacy-policy)
-- [Terms of Service](https://www.chop.edu/pages/terms-and-conditions)
-- [Compliance](https://www.chop.edu/health-resources/cms-interoperability-and-patient-access)
+- [Website](https://www.chop.edu/)
 - [Support](https://www.chop.edu/contact-us)
-- [Spectral Rules](rules/chop-fhir-rules.yml)
-- [JSON-LD](json-ld/childrens-hospital-of-philadelphia-context.jsonld) — [JSON-LD](https://www.w3.org/TR/json-ld11/)
-- [Vocabulary](vocabulary/childrens-hospital-of-philadelphia-vocabulary.yml)
-- [Features](undefined)
-- [Use Cases](undefined)
-- [Integrations](undefined)
-- [Solutions](undefined)
+- [Blog](https://www.chop.edu/news)
+- [Compliance](https://www.chop.edu/health-resources/cms-interoperability-and-patient-access)
+- [Terms of service](https://www.chop.edu/pages/terms-and-conditions)
+- [Privacy policy](https://www.chop.edu/pages/privacy-policy)
+- [GitHub](https://github.com/chop-dbhi)
 
-## Maintainers
+## API Evangelist rating
 
-**FN:** Kin Lane
-**Email:** info@apievangelist.com
+**Kin Score 39.1** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 57.1 |
+| Contract quality | 62.0 |
+| Contract governance | 27.3 |
+| Operational transparency | 2.6 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 10.5 |
+
+**Agent readiness 27.3** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | derived (partial credit) |
+| Reversibility Documented | na |
+| MCP Server | — |
+| Auth Clarity | negotiable (partial credit) |
+| Idempotency | na |
+| Error Semantics | — |
+| OpenAPI Examples | documented (partial credit) |
+| Rate Limit Signal | — |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | na |
+| Delegated Identity | documented (partial credit) |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 29.7** — Health
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/childrens-hospital-of-philadelphia/](https://apis.io/providers/childrens-hospital-of-philadelphia/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Children's Hospital of Philadelphia: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/childrens-hospital-of-philadelphia/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
